@@ -3,5 +3,26 @@ function randomMinMax(min, max){
     return Math.floor(Math.random() * max + min); //così ottengo un numero random che va da min a max
 }
 
-let num = randomMinMax(1, 6);
-console.log(num);
+let pcNumber = randomMinMax(1, 6);
+console.log(pcNumber);
+
+function pariDispari(num1, num2){
+    let sum = num1 + num2;
+
+    if(sum % 2 == 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+let a = 4;
+let b = 6;
+console.log(a,b);
+
+let pD = pariDispari(a, b);
+if(pD == true){
+    console.log('La somma è pari');
+}else{
+    console.log('è dispari');
+}
